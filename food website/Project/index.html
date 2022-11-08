@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Market</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <style>
+        .btn-upper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: green;
+            margin-left: 100px;
+            color: white;
+            font-size: 20px;
+            height: 40px;
+            width: 350px;
+        }
+        h1{
+            font-size: 80px;
+            margin-left: 100px;
+        }
+        .btn-lower{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(243, 77, 77);
+            margin-top: 50px;
+            margin-left: 100px;
+            color: white;
+            font-size: 30px;
+            height: 40px;
+            width: 200px;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+        }
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+
+          .food-images {
+            height: 800px;
+            width: 600px;
+            margin-left: 270px;
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+             "l1 l1 l2 l3"
+             "l1 l1 l2 l7"
+             "l4 l5 l6 l7"
+             ;
+
+          }
+          .single {
+            border-radius: 10px;
+          }
+          .single:hover {
+            cursor: pointer;
+            transform: scale(1.06);
+            transition: 0.2s ease-in-out;
+          }
+          .class1 {
+          grid-area: l1;
+          }
+          .class2 {
+          grid-area: l2;
+          }
+          .class3 {
+          grid-area: l3;
+          }
+          .class4 {
+          grid-area: l4;
+          }
+          .class5 {
+          grid-area: l5;
+          }
+          .class6 {
+          grid-area: l6;
+          }
+          .class7 {
+          grid-area: l7;
+          }
+ 
+          
+          .dropdown-content a:hover {background-color: #ddd;}
+          
+          .dropdown:hover .dropdown-content {display: block;}
+          
+          .dropdown:hover .dropbtn {background-color: #3e8e41;}
+          .footer-item {
+            margin: 0;
+            padding: 0;
+          }
+    </style>
+</head>
+<body style="margin:0; padding:0;">
+    <div style="display: flex; justify-content:space-evenly; align-items:center;">
+        <div style="display: flex; margin-right:500px;">
+            <img src="./images/image2.jpeg" alt="fresh" height="150px" width="170px">
+            <img src="./images/image1.jpeg" alt="food company" height="150px" width="360px">
+        </div>  
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="index1.html">Login</a>
+              <a href="index3.html">Sign Up</a>
+              <a href="#foods">Menu</a>
+              <a href="#contact">Contact Us</a>
+            </div>
+          </div>
+    </div>
+    <div style="margin: 200px; display:flex; margin-top:100px">
+        <div>
+            <img src="./images/image4.jpg" style="border-radius: 179px;" alt="image3">
+        </div>
+        <div>
+            <h3 class="btn-upper" >
+                50% OFF in first five orders
+            </h3>
+            <div>
+                <h1>First we eat then everything else</h1>
+            </div>
+            <div style="margin-left: 100px;">
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero ducimus asperiores officia quae facere accusamus perspiciatis itaque distinctio omnis dolores ipsum qui at ratione odit aperiam non, velit iusto sapiente saepe maiores. Dolores quos, quibusdam, officiis nisi ut veritatis ad similique enim consequatur sit accusamus? Iusto deserunt quas distinctio totam.</h3>
+            </div>
+            <button class="btn-lower">
+                Explore Now
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <div style="display: flex">
+            <img src="./images/image5.png" alt="delivery" height="100px" width="130px">
+            <div>
+                <h3>Fast Home delivery</h3>
+                <pre>
+Lorem ipsum, dolor 
+sit amet consectet
+                </pre>
+            </div>
+        </div>
+        <div style="display: flex; margin-left: 200px;">
+            <img src="./images/image6.png" alt="food" height="100px" width="130px">
+            <div>
+                <h3>Tasty Food</h3>
+                <pre>
+Lorem ipsum, dolor 
+sit amet consectet
+                </pre>
+            </div>
+        </div>
+        <div style="display: flex; margin-left: 200px; ">
+            <img src="./images/image7.png" alt="voucher" height="100px" width="130px">
+            <div>
+                <h3>Discount voucher</h3>
+                <pre>
+Lorem ipsum, dolor 
+sit amet consectet
+                </pre>
+            </div>
+        </div>
+    </div>
+    <center><h2 style="font-size:50px;">Our Menu</h2></center>
+    <div class="food-images" id="foods">
+        <div class="class1">
+            <img class="single" src="./images/food1.png" alt="food1">
+        </div>
+        <div class="class2">
+            <img class="single" src="./images/food2.png" alt="food2">
+        </div>
+        <div class="class3">
+            <img class="single" src="./images/food3.png" alt="food3">
+        </div>
+        <div class="class4">
+            <img class="single" src="./images/food4.png" alt="food4">
+        </div>
+        <div class="class5">
+            <img class="single" src="./images/food5.png" alt="food5">
+        </div>
+        <div class="class6">
+            <img class="single" src="./images/food6.png" alt="food6">
+        </div>
+        <div class="class7">
+            <img class="single" src="./images/food7.png" alt="food7">
+        </div>
+    </div>
+    
+    <footer style="display: flex; background-color:rgb(238, 209, 181); margin-top:220px;" id="contact">
+        <div class="first">
+            <img style="mix-blend-mode:multiply; margin:60px;" src="./images/image1.jpeg" alt="">
+        </div>
+        <div class="second" style="margin-left:400px; ">
+            <h4><b>Main Links</b></h4>
+            <a><p class="footer-item" >Order Tracking</p></a>
+            <a><p class="footer-item" >New Order</p></a>
+            <a><p class="footer-item" >Contact Us</p></a>
+            <a><p class="footer-item" >News & Blogs</p></a>
+        </div>
+        <div class="third"style="margin-left:80px;">
+            <h4><b>Support</b></h4>
+            <a><p class="footer-item" >About US</p></a>
+            <a><p class="footer-item" >Privacy Policy</p></a>
+            <a><p class="footer-item" >Terms & Conditions</p></a>
+        </div>
+        <div class="four"style="margin-left:80px;">
+            <h4><b>Join Our Newsletter</b></h4>
+            <input type="text" class="footer-item" style="margin-bottom: 10px;"  placeholder="Enter Your Email Address" width="40px">
+            <a><p class="footer-item" >New Order</p></a>
+            <a><p class="footer-item" >Contact Us</p></a>
+            <a><p class="footer-item" >News & Blogs</p></a>
+        </div>
+    </footer>
+</body>
+</html>
